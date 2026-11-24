@@ -263,7 +263,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>get_file_content</code></td><td class="desc">Get file content by ID</td><td><span class="req">file_id</span></td><td><code>str</code></td></tr>
 <tr><td><code>get_model</code></td><td class="desc">Get a model by ID</td><td><span class="req">model_id</span></td><td><code>OpenAIModel</code></td></tr>
 <tr><td><code>get_thread_run</code></td><td class="desc">Get a thread run by ID</td><td><span class="req">thread_id, run_id</span></td><td><code>ThreadRun</code></td></tr>
-<tr><td><code>list_assistants</code></td><td class="desc">List assistants</td><td><span class="opt">[limit]</span></td><td><code>PaginatedList[Assistant]</code></td></tr>
+<tr><td><code>list_assistants</code></td><td class="desc">List assistants</td><td><span class="opt">[limit, after]</span></td><td><code>PaginatedList[Assistant]</code></td></tr>
 <tr><td><code>list_files</code></td><td class="desc">List uploaded files</td><td><span class="opt">[purpose]</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_fine_tuning_jobs</code></td><td class="desc">List fine-tuning jobs</td><td><span class="opt">[limit]</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_models</code></td><td class="desc">List available models</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>

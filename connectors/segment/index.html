@@ -244,7 +244,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>group</code></td><td class="desc">Associate a user with a group</td><td><span class="req">user_id, group_id</span> &nbsp;<span class="opt">[traits]</span></td><td><code>SegmentTrackResult</code></td></tr>
 <tr><td><code>identify</code></td><td class="desc">Identify a user with traits</td><td><span class="req">user_id</span> &nbsp;<span class="opt">[traits]</span></td><td><code>SegmentTrackResult</code></td></tr>
 <tr><td><code>list_destinations</code></td><td class="desc">List destinations for a source</td><td><span class="req">source_id</span></td><td><code>list</code></td></tr>
-<tr><td><code>list_sources</code></td><td class="desc">List sources in the workspace</td><td><span class="opt">[limit]</span></td><td><code>PaginatedList[SegmentSource]</code></td></tr>
+<tr><td><code>list_sources</code></td><td class="desc">List sources in the workspace</td><td><span class="opt">[limit, cursor]</span></td><td><code>PaginatedList[SegmentSource]</code></td></tr>
 <tr><td><code>list_warehouses</code></td><td class="desc">List connected warehouses</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>page</code></td><td class="desc">Track a page view</td><td><span class="req">user_id</span> &nbsp;<span class="opt">[name, properties]</span></td><td><code>SegmentTrackResult</code></td></tr>
 <tr><td><code>track</code></td><td class="desc">Track an event for a user</td><td><span class="req">user_id, event</span> &nbsp;<span class="opt">[properties]</span></td><td><code>SegmentTrackResult</code></td></tr>

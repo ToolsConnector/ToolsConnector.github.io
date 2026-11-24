@@ -250,13 +250,13 @@ footer a { color: #8a8a93; }
 <tr><td><code>delete_group ⚠</code></td><td class="desc">Delete a group from Okta</td><td><span class="req">group_id</span></td><td><code>bool</code></td></tr>
 <tr><td><code>get_group</code></td><td class="desc">Get a single group by ID</td><td><span class="req">group_id</span></td><td><code>OktaGroup</code></td></tr>
 <tr><td><code>get_user</code></td><td class="desc">Get a single user by ID</td><td><span class="req">user_id</span></td><td><code>OktaUser</code></td></tr>
-<tr><td><code>list_applications</code></td><td class="desc">List applications in the Okta organization</td><td><span class="opt">[limit]</span></td><td><code>PaginatedList[OktaApplication]</code></td></tr>
-<tr><td><code>list_group_members</code></td><td class="desc">List members of a group</td><td><span class="req">group_id</span> &nbsp;<span class="opt">[limit]</span></td><td><code>PaginatedList[OktaUser]</code></td></tr>
-<tr><td><code>list_groups</code></td><td class="desc">List groups in the Okta organization</td><td><span class="opt">[search, limit]</span></td><td><code>PaginatedList[OktaGroup]</code></td></tr>
-<tr><td><code>list_system_logs</code></td><td class="desc">List system log events</td><td><span class="opt">[since, until, filter, q, limit]</span></td><td><code>PaginatedList[OktaLogEvent]</code></td></tr>
+<tr><td><code>list_applications</code></td><td class="desc">List applications in the Okta organization</td><td><span class="opt">[limit, after]</span></td><td><code>PaginatedList[OktaApplication]</code></td></tr>
+<tr><td><code>list_group_members</code></td><td class="desc">List members of a group</td><td><span class="req">group_id</span> &nbsp;<span class="opt">[limit, after]</span></td><td><code>PaginatedList[OktaUser]</code></td></tr>
+<tr><td><code>list_groups</code></td><td class="desc">List groups in the Okta organization</td><td><span class="opt">[search, limit, after]</span></td><td><code>PaginatedList[OktaGroup]</code></td></tr>
+<tr><td><code>list_system_logs</code></td><td class="desc">List system log events</td><td><span class="opt">[since, until, filter, q, limit, after]</span></td><td><code>PaginatedList[OktaLogEvent]</code></td></tr>
 <tr><td><code>list_user_apps</code></td><td class="desc">List applications assigned to a user</td><td><span class="req">user_id</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_user_groups</code></td><td class="desc">List groups a user belongs to</td><td><span class="req">user_id</span></td><td><code>list</code></td></tr>
-<tr><td><code>list_users</code></td><td class="desc">List users in the Okta organization</td><td><span class="opt">[search, filter, limit]</span></td><td><code>PaginatedList[OktaUser]</code></td></tr>
+<tr><td><code>list_users</code></td><td class="desc">List users in the Okta organization</td><td><span class="opt">[search, filter, limit, after]</span></td><td><code>PaginatedList[OktaUser]</code></td></tr>
 <tr><td><code>remove_user_from_group</code></td><td class="desc">Remove a user from a group</td><td><span class="req">group_id, user_id</span></td><td><code>bool</code></td></tr>
 <tr><td><code>reset_password</code></td><td class="desc">Reset a user&#39;s password</td><td><span class="req">user_id</span></td><td><code>dict</code></td></tr>
 <tr><td><code>suspend_user ⚠</code></td><td class="desc">Suspend a user in Okta</td><td><span class="req">user_id</span></td><td><code>bool</code></td></tr>

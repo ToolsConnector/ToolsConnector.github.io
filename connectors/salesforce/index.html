@@ -257,7 +257,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>list_objects</code></td><td class="desc">List all sObjects in the org</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_recent</code></td><td class="desc">List recently viewed records for an sObject</td><td><span class="req">sobject</span> &nbsp;<span class="opt">[limit]</span></td><td><code>PaginatedList[SalesforceRecord]</code></td></tr>
 <tr><td><code>list_reports</code></td><td class="desc">List available reports</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
-<tr><td><code>query</code></td><td class="desc">Run a SOQL query</td><td><span class="req">soql</span> &nbsp;<span class="opt">[limit]</span></td><td><code>PaginatedList[SalesforceRecord]</code></td></tr>
+<tr><td><code>query</code></td><td class="desc">Run a SOQL query</td><td><span class="req">soql</span> &nbsp;<span class="opt">[limit, next_records_url]</span></td><td><code>PaginatedList[SalesforceRecord]</code></td></tr>
 <tr><td><code>run_report</code></td><td class="desc">Run a Salesforce report</td><td><span class="req">report_id</span></td><td><code>dict</code></td></tr>
 <tr><td><code>search</code></td><td class="desc">Run a SOSL search</td><td><span class="req">sosl</span></td><td><code>list</code></td></tr>
 <tr><td><code>update_record</code></td><td class="desc">Update an existing sObject record</td><td><span class="req">sobject, record_id, fields</span></td><td><code>NoneType</code></td></tr>

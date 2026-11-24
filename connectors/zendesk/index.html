@@ -249,7 +249,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>list_ticket_comments</code></td><td class="desc">List comments on a Zendesk ticket</td><td><span class="req">ticket_id</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_tickets</code></td><td class="desc">List tickets from Zendesk</td><td><span class="opt">[status, limit, page]</span></td><td><code>PaginatedList[ZendeskTicket]</code></td></tr>
 <tr><td><code>list_users</code></td><td class="desc">List users in Zendesk</td><td><span class="opt">[limit, page]</span></td><td><code>PaginatedList[ZendeskUser]</code></td></tr>
-<tr><td><code>search</code></td><td class="desc">Search across Zendesk resources</td><td><span class="req">query</span> &nbsp;<span class="opt">[limit]</span></td><td><code>PaginatedList[ZendeskSearchResult]</code></td></tr>
+<tr><td><code>search</code></td><td class="desc">Search across Zendesk resources</td><td><span class="req">query</span> &nbsp;<span class="opt">[limit, page]</span></td><td><code>PaginatedList[ZendeskSearchResult]</code></td></tr>
 <tr><td><code>update_ticket ⚠</code></td><td class="desc">Update an existing Zendesk ticket</td><td><span class="req">ticket_id</span> &nbsp;<span class="opt">[status, priority, comment]</span></td><td><code>ZendeskTicket</code></td></tr>
 <tr><td><code>update_user</code></td><td class="desc">Update an existing Zendesk user</td><td><span class="req">user_id</span> &nbsp;<span class="opt">[name, email]</span></td><td><code>ZendeskUser</code></td></tr>
       </tbody>

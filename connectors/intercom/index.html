@@ -249,7 +249,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>list_notes</code></td><td class="desc">List notes on a contact</td><td><span class="req">contact_id</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_tags</code></td><td class="desc">List all tags in the workspace</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>reply_to_conversation ⚠</code></td><td class="desc">Reply to a conversation</td><td><span class="req">conversation_id, body</span> &nbsp;<span class="opt">[message_type]</span></td><td><code>IntercomConversation</code></td></tr>
-<tr><td><code>search_contacts</code></td><td class="desc">Search contacts using filters</td><td><span class="req">query</span> &nbsp;<span class="opt">[field, operator]</span></td><td><code>PaginatedList[IntercomContact]</code></td></tr>
+<tr><td><code>search_contacts</code></td><td class="desc">Search contacts using filters</td><td><span class="req">query</span> &nbsp;<span class="opt">[field, operator, starting_after]</span></td><td><code>PaginatedList[IntercomContact]</code></td></tr>
 <tr><td><code>tag_contact ⚠</code></td><td class="desc">Tag a contact</td><td><span class="req">contact_id, tag_name</span></td><td><code>bool</code></td></tr>
 <tr><td><code>update_contact</code></td><td class="desc">Update an existing contact</td><td><span class="req">contact_id</span> &nbsp;<span class="opt">[name, email]</span></td><td><code>IntercomContact</code></td></tr>
       </tbody>

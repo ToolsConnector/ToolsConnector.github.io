@@ -255,7 +255,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>list_lists</code></td><td class="desc">List all contact lists in SendGrid</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_sender_identities</code></td><td class="desc">List verified sender identities</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_suppressions</code></td><td class="desc">List global email suppressions</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
-<tr><td><code>list_templates</code></td><td class="desc">List transactional templates from SendGrid</td><td><span class="opt">[limit]</span></td><td><code>PaginatedList[SendGridTemplate]</code></td></tr>
+<tr><td><code>list_templates</code></td><td class="desc">List transactional templates from SendGrid</td><td><span class="opt">[limit, page_token]</span></td><td><code>PaginatedList[SendGridTemplate]</code></td></tr>
 <tr><td><code>remove_from_suppression ⚠</code></td><td class="desc">Remove an email from global suppression group</td><td><span class="req">email</span></td><td><code>bool</code></td></tr>
 <tr><td><code>search_contacts</code></td><td class="desc">Search marketing contacts using a SGQL query</td><td><span class="req">query</span></td><td><code>PaginatedList[SendGridContact]</code></td></tr>
 <tr><td><code>send_email ⚠</code></td><td class="desc">Send an email via SendGrid</td><td><span class="req">to, from_email, subject, content</span> &nbsp;<span class="opt">[content_type]</span></td><td><code>SendGridResponse</code></td></tr>

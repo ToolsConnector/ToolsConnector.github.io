@@ -263,7 +263,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>list_users</code></td><td class="desc">List all users in the workspace</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>query_database</code></td><td class="desc">Query a database with optional filters and sorts</td><td><span class="req">database_id</span> &nbsp;<span class="opt">[filter, sorts, limit, cursor]</span></td><td><code>PaginatedList[NotionPage]</code></td></tr>
 <tr><td><code>restore_page</code></td><td class="desc">Restore an archived page</td><td><span class="req">page_id</span></td><td><code>NotionPage</code></td></tr>
-<tr><td><code>search</code></td><td class="desc">Search pages and databases in the workspace</td><td><span class="opt">[query, filter_type, limit, cursor]</span></td><td><code>PaginatedList[NotionPage]</code></td></tr>
+<tr><td><code>search</code></td><td class="desc">Search pages in the workspace</td><td><span class="opt">[query, filter_type, limit, cursor]</span></td><td><code>PaginatedList[NotionPage]</code></td></tr>
 <tr><td><code>update_block</code></td><td class="desc">Update a block&#39;s content</td><td><span class="req">block_id, content</span></td><td><code>NotionBlock</code></td></tr>
 <tr><td><code>update_comment</code></td><td class="desc">Update a comment&#39;s text</td><td><span class="req">comment_id, text</span></td><td><code>NotionComment</code></td></tr>
 <tr><td><code>update_database</code></td><td class="desc">Update a database&#39;s title, description, or properties</td><td><span class="req">database_id</span> &nbsp;<span class="opt">[title, description, properties]</span></td><td><code>NotionDatabase</code></td></tr>

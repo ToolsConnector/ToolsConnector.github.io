@@ -246,7 +246,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>fetch</code></td><td class="desc">Fetch vectors by ID</td><td><span class="req">ids</span> &nbsp;<span class="opt">[namespace]</span></td><td><code>PineconeFetchResult</code></td></tr>
 <tr><td><code>list_collections</code></td><td class="desc">List all collections</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
 <tr><td><code>list_indexes</code></td><td class="desc">List all indexes in the account</td><td><span class="opt">—</span></td><td><code>list</code></td></tr>
-<tr><td><code>list_vectors</code></td><td class="desc">List vector IDs in the index</td><td><span class="opt">[prefix, namespace, limit]</span></td><td><code>PaginatedList[PineconeVectorListItem]</code></td></tr>
+<tr><td><code>list_vectors</code></td><td class="desc">List vector IDs in the index</td><td><span class="opt">[prefix, namespace, limit, pagination_token]</span></td><td><code>PaginatedList[PineconeVectorListItem]</code></td></tr>
 <tr><td><code>query</code></td><td class="desc">Query vectors by similarity</td><td><span class="req">vector</span> &nbsp;<span class="opt">[top_k, namespace, filter, include_metadata]</span></td><td><code>PineconeQueryResult</code></td></tr>
 <tr><td><code>update</code></td><td class="desc">Update a vector&#39;s values or metadata</td><td><span class="req">id</span> &nbsp;<span class="opt">[values, metadata, namespace]</span></td><td><code>DeleteResult</code></td></tr>
 <tr><td><code>upsert</code></td><td class="desc">Upsert vectors into the index</td><td><span class="req">vectors</span> &nbsp;<span class="opt">[namespace]</span></td><td><code>PineconeUpsertResult</code></td></tr>
