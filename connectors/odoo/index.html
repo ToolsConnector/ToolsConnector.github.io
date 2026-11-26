@@ -231,7 +231,7 @@ footer a { color: #8a8a93; }
         </tr>
       </thead>
       <tbody>
-        <tr><td><code>call_method</code></td><td class="desc">Call any method on any Odoo model (advanced escape hatch)</td><td><span class="req">model, method</span> &nbsp;<span class="opt">[args, kwargs]</span></td><td><code>Any</code></td></tr>
+        <tr><td><code>call_method ⚠</code></td><td class="desc">Call any method on any Odoo model (advanced escape hatch)</td><td><span class="req">model, method</span> &nbsp;<span class="opt">[args, kwargs]</span></td><td><code>Any</code></td></tr>
 <tr><td><code>create</code></td><td class="desc">Create a new record of any Odoo model</td><td><span class="req">model, values</span></td><td><code>int</code></td></tr>
 <tr><td><code>fields_get</code></td><td class="desc">Discover the fields (schema) of an Odoo model</td><td><span class="req">model</span> &nbsp;<span class="opt">[attributes]</span></td><td><code>dict</code></td></tr>
 <tr><td><code>get_version</code></td><td class="desc">Get the Odoo server version (connectivity / capability check)</td><td><span class="opt">—</span></td><td><code>OdooVersion</code></td></tr>
@@ -240,7 +240,7 @@ footer a { color: #8a8a93; }
 <tr><td><code>read_group</code></td><td class="desc">Aggregate Odoo records grouped by one or more fields (GROUP BY)</td><td><span class="req">model</span> &nbsp;<span class="opt">[domain, fields, groupby, limit, offset, orderby]</span></td><td><code>list</code></td></tr>
 <tr><td><code>search_count</code></td><td class="desc">Count records of an Odoo model matching a domain filter</td><td><span class="req">model</span> &nbsp;<span class="opt">[domain]</span></td><td><code>int</code></td></tr>
 <tr><td><code>search_read</code></td><td class="desc">Search and read records of any Odoo model in one call</td><td><span class="req">model</span> &nbsp;<span class="opt">[domain, fields, limit, offset, order]</span></td><td><code>PaginatedList[dict[str, Any]]</code></td></tr>
-<tr><td><code>unlink</code></td><td class="desc">Delete records of an Odoo model by their IDs</td><td><span class="req">model, ids</span></td><td><code>bool</code></td></tr>
+<tr><td><code>unlink ⚠</code></td><td class="desc">Delete records of an Odoo model by their IDs</td><td><span class="req">model, ids</span></td><td><code>bool</code></td></tr>
 <tr><td><code>write</code></td><td class="desc">Update existing records of an Odoo model</td><td><span class="req">model, ids, values</span></td><td><code>bool</code></td></tr>
       </tbody>
     </table>
