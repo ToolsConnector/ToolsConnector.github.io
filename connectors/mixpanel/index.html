@@ -235,7 +235,7 @@ footer a { color: #8a8a93; }
       </thead>
       <tbody>
         <tr><td><code>create_annotation ⚠</code></td><td class="desc">Create an annotation in Mixpanel</td><td><span class="req">date, description</span></td><td><code>dict</code></td></tr>
-<tr><td><code>delete_profile ⚠</code></td><td class="desc">Delete a user profile</td><td><span class="req">distinct_id</span></td><td><code>bool</code></td></tr>
+<tr><td><code>delete_profile ⚠</code></td><td class="desc">Delete a user profile</td><td><span class="req">distinct_id, project_token</span></td><td><code>bool</code></td></tr>
 <tr><td><code>export_data</code></td><td class="desc">Export raw event data</td><td><span class="req">from_date, to_date</span> &nbsp;<span class="opt">[event]</span></td><td><code>list</code></td></tr>
 <tr><td><code>get_event_count</code></td><td class="desc">Get event count for a date range</td><td><span class="req">event, from_date, to_date</span></td><td><code>dict</code></td></tr>
 <tr><td><code>get_funnels</code></td><td class="desc">Get funnel analysis</td><td><span class="req">funnel_id, from_date, to_date</span></td><td><code>MixpanelFunnel</code></td></tr>
